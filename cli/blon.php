@@ -1,30 +1,21 @@
-#!/usr/bin/php -q
+#!/usr/bin/env php
 <?php
-    require('consts.php');
+require('consts.php');
+require('db.php');
 
-    $options = array();
-    $files = array();
-    $ignorelist = array();
-    $locale_content = "";
+class Blon {
+    private $options = array();
+    private $files = array();
+    private $ignorelist = array();
 
-    /**
-    * Show introduction message
-    * 
-    * @return array
-    */
-    function intro() {
-        echo constant('intro');
-    }
+    private $db;
 
     /**
     * Read list of params form command line
     * 
     * @return array
     */
-    function readParams() {
-        global $options;
-        global $files;
-
+    private function readParams() {
         // read cli arguments
         $argc = $_SERVER["argc"]."\n";
         $argv = $_SERVER["argv"];
@@ -33,15 +24,19 @@
         unset($argv[0]);
 
         // process args
-        foreach($argv as $a) {
-            $p = explode("=", $a);
-            if ($p[0][0] == '-') {
-                $options[$p[0]] = $p[1];
+        foreach($argv as $arg) {
+            if ($arg[0] == '-') {
+                $param = explode('=', $arg);
+                $name = $param[0];
+                $value = "";
+                if (isset($param[1])) $value = $param[1];
+                $this->options[$name] = $value;
             } else {
-                array_push($files, $a);
+                array_push($this->files, $arg);
             }
         }
-        buildIgnoreList();
+
+        $this->buildIgnoreList();
     }
 
     /**
@@ -49,19 +44,16 @@
     * 
     * @return array
     */
-    function buildIgnoreList() {
-        global $ignorelist;
-        global $options;
-
+    private function buildIgnoreList() {
         // by default ignore files that started with . 
-        array_push($ignorelist, '/(^|\/)\..+/');
+        array_push($this->ignorelist, '/(^|\/)\..+/');
 
         // push user specified ignore list into $ignorelist
-        if (isOptionIncluded('--ignore-dir')) {
-            $idirs = explode(',', $options['--ignore-dir']);
+        if ($this->isOptionIncluded('--ignore-dir')) {
+            $idirs = explode(',', $this->options['--ignore-dir']);
 
             foreach ($idirs as $idir) 
-                array_push($ignorelist, '/^' . str_replace('/', '\/', $idir) . '($|\/).*/');
+                array_push($this->ignorelist, '/^' . str_replace('/', '\/', $idir) . '($|\/).*/');
         }
     }
 
@@ -70,7 +62,7 @@
     * 
     * @return array
     */
-    function getSupportedExtensions() {
+    private function getSupportedExtensions() {
         return array(
             "html"   => ".htm .html",
             "php"    => ".php .phpt .php3 .php4 .php5 .phtml",
@@ -82,16 +74,15 @@
     * 
     * @return boolean 
     */
-    function isFileIgnored($file) {
+    private function isFileIgnored($file) {
         // ignore if file included in ignore list
-        global $ignorelist;
-        foreach ($ignorelist as $i) 
+        foreach ($this->ignorelist as $i) 
             if (preg_match($i, $file)) return true;
 
         // ignore if file extension is not supported
         if (!is_dir($file)) {
             $file_ext = "." . pathinfo($file, PATHINFO_EXTENSION);
-            $types = getSupportedExtensions();
+            $types = $this->getSupportedExtensions();
 
             $isExtSupported = false;
             foreach ($types as $t) {
@@ -109,105 +100,12 @@
     * 
     * @return array
     */
-    function isOptionIncluded() {
-        global $options;
-
+    private function isOptionIncluded() {
         $args = func_get_args();
         foreach ($args as $arg) {
-            if (isset($arg, $options)) {
-                return true;
-            }
+            if (isset($this->options[$arg])) return true;
         }
         return false;
-    }
-
-    /**
-    * Check if the option is included
-    * 
-    * @return array
-    */
-    function getOptionValue($p) {
-        global $options;
-        return $options[$p];
-    }
-
-    /**
-    * Print list of matches
-    * 
-    * @return array
-    */
-    function printMatches($matches, $file) {
-        echo "\033[32m$file\n\033[37m";
-
-        // load content of the file because we need it to find find number of match
-        $content = file_get_contents($file);
-
-        for ($i = 0; $i < count($matches[0]); $i++) {
-            $charpos = $matches[0][$i][1];
-
-            if ($charpos == 0) {
-                $lineno = 1;
-            } else {
-                // find line number
-                list($before) = str_split($content, $charpos);
-                $lineno = strlen($before) - strlen(str_replace("\n", "", $before)) + 1;
-            }
-
-            $line = $matches[0][$i][0]; 
-            $match = $matches[1][$i][0];
-            
-            $line = preg_replace('/t\(\s*[\'\"](.*)[\'\"]\s*\)/', "\033[30;43m$0\033[0m", $line);
-            echo "\033[33m$lineno\033[0m:$line\n";
-        }
-
-        echo "\n";
-    }
-
-    /**
-    * Write matches to locale file
-    * 
-    * @return array
-    */
-    function writeLocaleHeader() {
-        global $locale_content;
-        $locale_content .= "<?php\n\treturn array(\n";
-    }
-
-    /**
-    * Write matches to locale file
-    * 
-    * @return array
-    */
-    function writeLocaleFooter() {
-        global $locale_content;
-        $locale_content .= ");\n";
-    }
-
-    /**
-    * Write matches to locale file
-    * 
-    * @return array
-    */
-    function writeLocaleMatches($matches, $file) {
-        global $locale_content;
-        $ext = pathinfo($file, PATHINFO_EXTENSION);
-
-        $locale_content .= "\t\t/**\n\t\t* $file\n\t\t*/\n";
-        for ($i = 0; $i < count($matches[0]); $i++) {
-            $match = $matches[1][$i][0];
-            $locale_content .= "\t\t\"$match\" => \"\",\n";
-        }
-        $locale_content .= "\n";
-    }
-
-    /**
-    * Write matches to locale file
-    * 
-    * @return array
-    */
-    function saveMatches() {
-        global $locale_content;
-        file_put_contents(getOptionValue('--locale'), $locale_content);
     }
 
     /**
@@ -216,19 +114,31 @@
     * 
     * @return array
     */
-    function processFile($file) {
+    private function processFile($file) {
         $pattern = "/.*\bt\([\'\"](.*)[\'\"]\).*/";
 
         $text = file_get_contents($file);
         $result = preg_match_all($pattern, $text, $matches, PREG_OFFSET_CAPTURE);
 
+        // if result not find return
         if (!$result) return;
 
-        // Show result if verbose option is set
-        //if (isOptionIncluded('-v', '--verbose')) printMatches($matches, $file);
+        for ($i = 0; $i < count($matches[0]); $i++) {
+            $charpos = $matches[0][$i][1];
 
-        // Create locale file
-        if (isOptionIncluded('--locale')) writeLocaleMatches($matches, $file);
+            if ($charpos == 0) {
+                $lineNo = 1;
+            } else {
+                // find line number
+                list($before) = str_split($text, $charpos);
+                $lineNo = strlen($before) - strlen(str_replace("\n", "", $before)) + 1;
+            }
+
+            $line = $matches[0][$i][0]; 
+            $match = $matches[1][$i][0];
+            
+            $this->db->addMatch($file, $lineNo, $line, $match);
+        }
     }
 
     /**
@@ -236,7 +146,7 @@
     * 
     * @return array
     */
-    function process($dir) {
+    public function process($dir) {
         if ($handle = opendir($dir)) {
             while (false != ($name = readdir($handle))) {
                 
@@ -247,9 +157,9 @@
                 if ($dir != '.' && is_dir($dir)) $name = "$dir/$name";
 
                 // ignore files that need to be ignored
-                if (isFileIgnored($name)) continue;
+                if ($this->isFileIgnored($name)) continue;
 
-                if (is_dir($name)) process("$name"); else processFile($name);
+                if (is_dir($name)) $this->process("$name"); else $this->processFile($name);
             }
 
             closedir($handle);
@@ -258,27 +168,25 @@
     }
 
     /**
-    * Main function
+    * Constructor 
     * 
     * @return
     */
-    function main() {
-        global $options;
-        global $files;
+    public function __construct() {
+        $this->readParams();
 
-        writeLocaleHeader();
+        $this->db = new BlonData();
 
-        readParams();
-        if (count($options) == 0 && count($files) == 0) {
-            intro();
+        if (count($this->options) == 0 && count($this->files) == 0) {
+            echo constant('intro');
         } else {
-            process('.');
+            $this->process(".");
         }
 
-        writeLocaleFooter();
+        if ($this->isOptionIncluded('-v', '--verbose')) $this->db->printMatches();
 
-        saveMatches();
+        if ($this->isOptionIncluded('--locale')) $this->db->save($this->options['--locale']);
     }
+}
 
-    // call the main function
-    main();
+$blon = new Blon();

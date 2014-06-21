@@ -1,5 +1,5 @@
 <?php
-define('intro', 
+    define('intro', 
 "Usage: gettext [OPTION]... [FILES OR DIRECTORIES]\n
 Extract all strings that passed into t() function in the tree from current directory
 and save them into the locale file. If the strings already exist in the locale file,
@@ -12,4 +12,7 @@ OPTIONS:
 
 Exit status is 0 if math, 1 if no match.\n");
 
+
+
+    
 ?>

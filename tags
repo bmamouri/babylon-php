@@ -1,0 +1,413 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	lib/Yaml/Tests/DumperTest.php	/^class A$/;"	c
+B	lib/Yaml/Tests/ParserTest.php	/^class B$/;"	c
+Blon	cli/blon.php	/^class Blon {$/;"	c
+BlonData	cli/db.php	/^class BlonData {$/;"	c
+DumpException	lib/Yaml/Exception/DumpException.php	/^class DumpException extends RuntimeException$/;"	c
+Dumper	lib/Yaml/Dumper.php	/^class Dumper$/;"	c
+Dumper	test/Dumper.php	/^class Dumper$/;"	c
+DumperTest	lib/Yaml/Tests/DumperTest.php	/^class DumperTest extends \\PHPUnit_Framework_TestCase$/;"	c
+EOF	lib/Yaml/Parser.php	/^            $EOF = !$this->moveToNextLine();$/;"	v
+EOF	lib/Yaml/Parser.php	/^        $EOF = !$this->moveToNextLine();$/;"	v
+Escaper	lib/Yaml/Escaper.php	/^class Escaper$/;"	c
+ExceptionInterface	lib/Yaml/Exception/ExceptionInterface.php	/^interface ExceptionInterface$/;"	i
+Inline	lib/Yaml/Inline.php	/^class Inline$/;"	c
+InlineTest	lib/Yaml/Tests/InlineTest.php	/^class InlineTest extends \\PHPUnit_Framework_TestCase$/;"	c
+JSON_UNESCAPED_SLASHES	lib/Yaml/Exception/ParseException.php	/^    define('JSON_UNESCAPED_SLASHES', 64);$/;"	d
+JSON_UNESCAPED_UNICODE	lib/Yaml/Exception/ParseException.php	/^    define('JSON_UNESCAPED_UNICODE', 256);$/;"	d
+ParseException	lib/Yaml/Exception/ParseException.php	/^class ParseException extends RuntimeException$/;"	c
+ParseExceptionTest	lib/Yaml/Tests/ParseExceptionTest.php	/^class ParseExceptionTest extends \\PHPUnit_Framework_TestCase$/;"	c
+Parser	lib/Yaml/Parser.php	/^class Parser$/;"	c
+ParserTest	lib/Yaml/Tests/ParserTest.php	/^class ParserTest extends \\PHPUnit_Framework_TestCase$/;"	c
+RuntimeException	lib/Yaml/Exception/RuntimeException.php	/^class RuntimeException extends \\RuntimeException implements ExceptionInterface$/;"	c
+Unescaper	lib/Yaml/Unescaper.php	/^class Unescaper$/;"	c
+Yaml	lib/Yaml/Yaml.php	/^class Yaml$/;"	c
+YamlTest	lib/Yaml/Tests/YamlTest.php	/^class YamlTest extends \\PHPUnit_Framework_TestCase$/;"	c
+__construct	cli/blon.php	/^    public function __construct() {$/;"	f
+__construct	cli/db.php	/^    public function __construct() {$/;"	f
+__construct	lib/Yaml/Exception/ParseException.php	/^    public function __construct($message, $parsedLine = -1, $snippet = null, $parsedFile = null, \\Exception $previous = null)$/;"	f
+__construct	lib/Yaml/Parser.php	/^    public function __construct($offset = 0)$/;"	f
+__toString	cli/db.php	/^    public function __toString() {$/;"	f
+a	lib/Yaml/Tests/DumperTest.php	/^    public $a = 'foo';$/;"	v
+actual	lib/Yaml/Tests/InlineTest.php	/^        $actual = Inline::parse($yaml, false, false, true);$/;"	v
+addFile	cli/db.php	/^    public function addFile($file) {$/;"	f
+addMatch	cli/db.php	/^    public function addMatch($file, $lineNo, $line, $match) {$/;"	f
+and	cli/blon.php	/^    * Read file, find all matches of t('') function and writes them into the $/;"	f
+argc	cli/blon.php	/^        $argc = $_SERVER["argc"]."\\n";$/;"	v
+args	cli/blon.php	/^        $args = func_get_args();$/;"	v
+argv	cli/blon.php	/^        $argv = $_SERVER["argv"];$/;"	v
+array	lib/Yaml/Tests/DumperTest.php	/^        $this->array = null;$/;"	v
+array	lib/Yaml/Tests/DumperTest.php	/^    protected $array = array($/;"	v
+array	lib/Yaml/Yaml.php	/^     *   $array = Yaml::parse('config.yml');$/;"	v
+b	lib/Yaml/Tests/ParserTest.php	/^    public $b = 'foo';$/;"	v
+block	lib/Yaml/Parser.php	/^                        $block = $values['value'];$/;"	v
+blon	cli/blon.php	/^$blon = new Blon();$/;"	v
+buildIgnoreList	cli/blon.php	/^    private function buildIgnoreList() {$/;"	f
+c	lib/Yaml/Parser.php	/^                        $c = $this->getRealCurrentLineNb() + 1;$/;"	v
+c	lib/Yaml/Parser.php	/^                        $c = $this->getRealCurrentLineNb();$/;"	v
+c	lib/Yaml/Parser.php	/^                    $c = $this->getRealCurrentLineNb() + 1;$/;"	v
+callback	lib/Yaml/Unescaper.php	/^        $callback = function ($match) use ($self) {$/;"	v
+cast	lib/Yaml/Inline.php	/^                        $cast = intval($scalar);$/;"	v
+charpos	cli/blon.php	/^            $charpos = $matches[0][$i][1];$/;"	v
+cleanup	lib/Yaml/Parser.php	/^    private function cleanup($value)$/;"	f
+colors	cli/db.php	/^        $colors = array($/;"	v
+content	lib/Yaml/Tests/ParserTest.php	/^                $content = $this->parser->parse($yaml);$/;"	v
+contents	lib/Yaml/Tests/YamlTest.php	/^        $contents = file_get_contents($filename);$/;"	v
+context	lib/Yaml/Parser.php	/^                $context = 'mapping';$/;"	v
+context	lib/Yaml/Parser.php	/^                $context = 'sequence';$/;"	v
+context	lib/Yaml/Parser.php	/^        $context = null;$/;"	v
+count	lib/Yaml/Parser.php	/^        $count = 0;$/;"	v
+currentIndentation	lib/Yaml/Parser.php	/^        $currentIndentation = $this->getCurrentLineIndentation();$/;"	v
+currentLine	lib/Yaml/Parser.php	/^        $this->currentLine = $this->lines[++$this->currentLineNb];$/;"	v
+currentLine	lib/Yaml/Parser.php	/^        $this->currentLine = $this->lines[--$this->currentLineNb];$/;"	v
+currentLine	lib/Yaml/Parser.php	/^        $this->currentLine = '';$/;"	v
+currentLine	lib/Yaml/Parser.php	/^    private $currentLine    = '';$/;"	v
+currentLineNb	lib/Yaml/Parser.php	/^        $this->currentLineNb = -1;$/;"	v
+currentLineNb	lib/Yaml/Parser.php	/^    private $currentLineNb  = -1;$/;"	v
+data	cli/db.php	/^    private $data = array(); $/;"	v
+data	lib/Yaml/Parser.php	/^                            $data = array();$/;"	v
+data	lib/Yaml/Parser.php	/^                        $data = $this->refs[$isInPlace];$/;"	v
+data	lib/Yaml/Parser.php	/^                    $data = $isProcessed;$/;"	v
+data	lib/Yaml/Parser.php	/^        $data = array();$/;"	v
+data	lib/Yaml/Parser.php	/^        $data = array(substr($this->currentLine, $newIndent));$/;"	v
+data	lib/Yaml/Tests/YamlTest.php	/^        $data = array('lorem' => 'ipsum', 'dolor' => 'sit');$/;"	v
+db	cli/blon.php	/^        $this->db = new BlonData();$/;"	v
+db	cli/blon.php	/^    private $db;$/;"	v
+delimiters	lib/Yaml/Inline.php	/^    public static function parseScalar($scalar, $delimiters = null, $stringDelimiters = array('"', "'"), &$i = 0, $evaluate = true)$/;"	v
+done	lib/Yaml/Inline.php	/^                        $done = true;$/;"	v
+done	lib/Yaml/Inline.php	/^            $done = false;$/;"	v
+dot	lib/Yaml/Exception/ParseException.php	/^            $dot = true;$/;"	v
+dot	lib/Yaml/Exception/ParseException.php	/^        $dot = false;$/;"	v
+dump	lib/Yaml/Dumper.php	/^    public function dump($input, $inline = 0, $indent = 0, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	f
+dump	lib/Yaml/Inline.php	/^    public static function dump($value, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	f
+dump	lib/Yaml/Tests/DumperTest.php	/^        $dump = $this->dumper->dump(array('foo' => new A(), 'bar' => 1));$/;"	v
+dump	lib/Yaml/Tests/DumperTest.php	/^        $dump = $this->dumper->dump(array('foo' => new A(), 'bar' => 1), 0, 0, false, true);$/;"	v
+dump	lib/Yaml/Yaml.php	/^    public static function dump($array, $inline = 2, $indent = 4, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	f
+dumpArray	lib/Yaml/Inline.php	/^    private static function dumpArray($value, $exceptionOnInvalidType, $objectSupport)$/;"	f
+dumper	cli/db.php	/^        $dumper = new Dumper();$/;"	v
+dumper	lib/Yaml/Tests/DumperTest.php	/^        $this->dumper = new Dumper();$/;"	v
+dumper	lib/Yaml/Tests/DumperTest.php	/^        $this->dumper = null;$/;"	v
+dumper	lib/Yaml/Tests/DumperTest.php	/^    protected $dumper;$/;"	v
+dumper	test/main.php	/^$dumper = new Dumper();$/;"	v
+error	lib/Yaml/Parser.php	/^                        $error = 'Internal PCRE error.';$/;"	v
+error	lib/Yaml/Parser.php	/^                        $error = 'Malformed UTF-8 data.';$/;"	v
+error	lib/Yaml/Parser.php	/^                        $error = 'Offset doesn\\'t correspond to the begin of a valid UTF-8 code point.';$/;"	v
+error	lib/Yaml/Parser.php	/^                        $error = 'Unable to parse.';$/;"	v
+error	lib/Yaml/Parser.php	/^                        $error = 'pcre.backtrack_limit reached.';$/;"	v
+error	lib/Yaml/Parser.php	/^                        $error = 'pcre.recursion_limit reached.';$/;"	v
+escapeWithDoubleQuotes	lib/Yaml/Escaper.php	/^    public static function escapeWithDoubleQuotes($value)$/;"	f
+escapeWithSingleQuotes	lib/Yaml/Escaper.php	/^    public static function escapeWithSingleQuotes($value)$/;"	f
+escaped	lib/Yaml/Escaper.php	/^    private static $escaped  = array('\\\\"', '\\\\\\\\', '\\\\"',$/;"	v
+escapees	lib/Yaml/Escaper.php	/^    private static $escapees = array('\\\\\\\\', '\\\\"', '"',$/;"	v
+evaluateScalar	lib/Yaml/Inline.php	/^    private static function evaluateScalar($scalar)$/;"	f
+exception	lib/Yaml/Tests/ParseExceptionTest.php	/^        $exception = new ParseException('Error message', 42, 'foo: bar', '\/var\/www\/app\/config.yml');$/;"	v
+exceptionOnInvalidType	lib/Yaml/Inline.php	/^    private static $exceptionOnInvalidType = false;$/;"	v
+exceptionOnInvalidType	lib/Yaml/Inline.php	/^    public static function dump($value, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	v
+exceptionOnInvalidType	lib/Yaml/Inline.php	/^    public static function parse($value, $exceptionOnInvalidType = false, $objectSupport = false, $objectForMap = false)$/;"	v
+exceptionOnInvalidType	lib/Yaml/Parser.php	/^    public function parse($value, $exceptionOnInvalidType = false, $objectSupport = false, $objectForMap = false)$/;"	v
+exceptionOnInvalidType	lib/Yaml/Yaml.php	/^    public static function parse($input, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	v
+expect	lib/Yaml/Tests/InlineTest.php	/^        $expect = "don't do somthin' like that";$/;"	v
+expected	lib/Yaml/Tests/DumperTest.php	/^        $expected = <<<EOF$/;"	v
+expected	lib/Yaml/Tests/DumperTest.php	/^$expected = <<<EOF$/;"	v
+expected	lib/Yaml/Tests/ParserTest.php	/^        $expected = array($/;"	v
+file	cli/db.php	/^    $file = $file[count($file) - 1];$/;"	v
+file	cli/db.php	/^    $file = explode("\\\\", $class);$/;"	v
+file	lib/Yaml/Yaml.php	/^            $file = $input;$/;"	v
+file	lib/Yaml/Yaml.php	/^        $file = '';$/;"	v
+file_ext	cli/blon.php	/^            $file_ext = "." . pathinfo($file, PATHINFO_EXTENSION);$/;"	v
+filename	lib/Yaml/Tests/YamlTest.php	/^        $filename = __DIR__.'\/Fixtures\/index.yml';$/;"	v
+files	cli/blon.php	/^    private $files = array();$/;"	v
+files	lib/Yaml/Tests/DumperTest.php	/^        $files = $this->parser->parse(file_get_contents($this->path.'\/index.yml'));$/;"	v
+files	lib/Yaml/Tests/ParserTest.php	/^        $files = $parser->parse(file_get_contents($path.'\/index.yml'));$/;"	v
+first	lib/Yaml/Parser.php	/^                        $first = reset($value);$/;"	v
+for	lib/Yaml/Exception/ExceptionInterface.php	/^ * Exception interface for all exceptions thrown by the component.$/;"	i
+getBlockChompingTests	lib/Yaml/Tests/ParserTest.php	/^    public function getBlockChompingTests()$/;"	f
+getCurrentLineIndentation	lib/Yaml/Parser.php	/^    private function getCurrentLineIndentation()$/;"	f
+getDataFormSpecifications	lib/Yaml/Tests/ParserTest.php	/^    public function getDataFormSpecifications()$/;"	f
+getNextEmbedBlock	lib/Yaml/Parser.php	/^    private function getNextEmbedBlock($indentation = null)$/;"	f
+getParsedFile	lib/Yaml/Exception/ParseException.php	/^    public function getParsedFile()$/;"	f
+getParsedLine	lib/Yaml/Exception/ParseException.php	/^    public function getParsedLine()$/;"	f
+getRealCurrentLineNb	lib/Yaml/Parser.php	/^    private function getRealCurrentLineNb()$/;"	f
+getSnippet	lib/Yaml/Exception/ParseException.php	/^    public function getSnippet()$/;"	f
+getSupportedExtensions	cli/blon.php	/^    private function getSupportedExtensions() {$/;"	f
+getTestsForDump	lib/Yaml/Tests/InlineTest.php	/^    public function getTestsForDump()$/;"	f
+getTestsForParse	lib/Yaml/Tests/InlineTest.php	/^    public function getTestsForParse()$/;"	f
+getTestsForParseWithMapObjects	lib/Yaml/Tests/InlineTest.php	/^    public function getTestsForParseWithMapObjects()$/;"	f
+getTimestampRegex	lib/Yaml/Inline.php	/^    private static function getTimestampRegex()$/;"	f
+i	lib/Yaml/Inline.php	/^        $i = 0;$/;"	v
+idirs	cli/blon.php	/^            $idirs = explode(',', $this->options['--ignore-dir']);$/;"	v
+ignorelist	cli/blon.php	/^    private $ignorelist = array();$/;"	v
+in	cli/consts.php	/^Extract all strings that passed into t() function in the tree from current directory$/;"	f
+indent	lib/Yaml/Parser.php	/^            $indent = $this->getCurrentLineIndentation();$/;"	v
+indentation	lib/Yaml/Dumper.php	/^        $this->indentation = (int) $num;$/;"	v
+indentation	lib/Yaml/Dumper.php	/^    protected $indentation = 4;$/;"	v
+indentation	lib/Yaml/Parser.php	/^                $indentation = strlen($matches[0]);$/;"	v
+indicator	lib/Yaml/Parser.php	/^    private function parseFoldedScalar($separator, $indicator = '', $indentation = 0)$/;"	v
+inline	lib/Yaml/Dumper.php	/^    public function dump($input, $inline = 0, $indent = 0, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	v
+inline	lib/Yaml/Yaml.php	/^    public static function dump($array, $inline = 2, $indent = 4, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	v
+input	lib/Yaml/Tests/ParserTest.php	/^        $input = <<<EOD$/;"	v
+input	lib/Yaml/Tests/ParserTest.php	/^        $input = <<<EOF$/;"	v
+input	lib/Yaml/Yaml.php	/^            $input = file_get_contents($file);$/;"	v
+intro	cli/consts.php	/^    define('intro', $/;"	d
+isAHash	lib/Yaml/Dumper.php	/^            $isAHash = array_keys($input) !== range(0, count($input) - 1);$/;"	v
+isCurrentLineBlank	lib/Yaml/Parser.php	/^                    $isCurrentLineBlank = $this->isCurrentLineBlank();$/;"	v
+isCurrentLineBlank	lib/Yaml/Parser.php	/^                $isCurrentLineBlank = $this->isCurrentLineBlank();$/;"	v
+isCurrentLineBlank	lib/Yaml/Parser.php	/^        $isCurrentLineBlank = $this->isCurrentLineBlank();$/;"	v
+isCurrentLineBlank	lib/Yaml/Parser.php	/^    private function isCurrentLineBlank()$/;"	f
+isCurrentLineComment	lib/Yaml/Parser.php	/^    private function isCurrentLineComment()$/;"	f
+isCurrentLineEmpty	lib/Yaml/Parser.php	/^    private function isCurrentLineEmpty()$/;"	f
+isDuplicate	cli/db.php	/^        $isDuplicate = $this->isMatchDuplicate($match);$/;"	v
+isExtSupported	cli/blon.php	/^                if (strpos($t, $file_ext) >= 0) { $isExtSupported = true; }$/;"	v
+isExtSupported	cli/blon.php	/^            $isExtSupported = false;$/;"	v
+isFileIgnored	cli/blon.php	/^    private function isFileIgnored($file) {$/;"	f
+isInPlace	lib/Yaml/Parser.php	/^                        $isInPlace = substr($values['value'], 1);$/;"	v
+isItUnindentedCollection	lib/Yaml/Parser.php	/^        $isItUnindentedCollection = $this->isStringUnIndentedCollectionItem($this->currentLine);$/;"	v
+isMatchDuplicate	cli/db.php	/^    private function isMatchDuplicate($match) {$/;"	f
+isNextLineIndented	lib/Yaml/Parser.php	/^    private function isNextLineIndented()$/;"	f
+isNextLineUnIndentedCollection	lib/Yaml/Parser.php	/^    private function isNextLineUnIndentedCollection()$/;"	f
+isOptionIncluded	cli/blon.php	/^    private function isOptionIncluded() {$/;"	f
+isProcessed	lib/Yaml/Parser.php	/^                        $isProcessed = $merged;$/;"	v
+isQuoted	lib/Yaml/Inline.php	/^                    $isQuoted = in_array($sequence[$i], array('"', "'"));$/;"	v
+isRef	lib/Yaml/Parser.php	/^                    $isRef = $matches['ref'];$/;"	v
+isRef	lib/Yaml/Parser.php	/^            $isRef = $isInPlace = $isProcessed = false;$/;"	v
+isStringUnIndentedCollectionItem	lib/Yaml/Parser.php	/^    private function isStringUnIndentedCollectionItem()$/;"	f
+key	lib/Yaml/Dumper.php	/^            foreach ($input as $key => $value) {$/;"	v
+key	lib/Yaml/Inline.php	/^            $key = self::parseScalar($mapping, array(':', ' '), array('"', "'"), $i, false);$/;"	v
+key	lib/Yaml/Inline.php	/^        foreach ($value as $key => $val) {$/;"	v
+key	lib/Yaml/Parser.php	/^                    $key = Inline::parseScalar($values['key']);$/;"	v
+keys	lib/Yaml/Inline.php	/^        $keys = array_keys($value);$/;"	v
+len	lib/Yaml/Inline.php	/^        $len = strlen($mapping);$/;"	v
+len	lib/Yaml/Inline.php	/^        $len = strlen($sequence);$/;"	v
+line	cli/blon.php	/^            $line = $matches[0][$i][0]; $/;"	v
+line	cli/db.php	/^                $line   = $match['line'];$/;"	v
+lineCount	lib/Yaml/Parser.php	/^                $lineCount = count($this->lines);$/;"	v
+lineNo	cli/blon.php	/^                $lineNo = 1;$/;"	v
+lineNo	cli/blon.php	/^                $lineNo = strlen($before) - strlen(str_replace("\\n", "", $before)) + 1;$/;"	v
+lineNo	cli/db.php	/^                $lineNo = $match['lineNo'];$/;"	v
+lines	lib/Yaml/Parser.php	/^        $this->lines = explode("\\n", $this->cleanup($value));$/;"	v
+lines	lib/Yaml/Parser.php	/^    private $lines          = array();$/;"	v
+locale	cli/db.php	/^            $locale = $yaml->parse(file_get_contents($output));$/;"	v
+locale	lib/Yaml/Inline.php	/^                $locale = setlocale(LC_NUMERIC, 0);$/;"	v
+locale	lib/Yaml/Tests/InlineTest.php	/^        $locale = setlocale(LC_NUMERIC, 0);$/;"	v
+locale	lib/babylon.php	/^    $locale = 'fa';$/;"	v
+ltrimmedLine	lib/Yaml/Parser.php	/^        $ltrimmedLine = ltrim($this->currentLine, ' ');$/;"	v
+m	cli/db.php	/^                $m      = $match['match'];$/;"	v
+match	cli/blon.php	/^            $match = $matches[1][$i][0];$/;"	v
+matches	cli/db.php	/^            $matches = $this->data[$file];$/;"	v
+mbEncoding	lib/Yaml/Inline.php	/^            $mbEncoding = mb_internal_encoding();$/;"	v
+mbEncoding	lib/Yaml/Parser.php	/^            $mbEncoding = mb_internal_encoding();$/;"	v
+merged	cli/db.php	/^        $merged = array();$/;"	v
+merged	lib/Yaml/Parser.php	/^                                $merged = array_merge($parsedItem, $merged);$/;"	v
+merged	lib/Yaml/Parser.php	/^                            $merged = array_merge($merged, $parsed);$/;"	v
+merged	lib/Yaml/Parser.php	/^                        $merged = array();$/;"	v
+message	lib/Yaml/Exception/ParseException.php	/^            $this->message = substr($this->message, 0, -1);$/;"	v
+message	lib/Yaml/Exception/ParseException.php	/^        $this->message = $this->rawMessage;$/;"	v
+message	lib/Yaml/Tests/ParseExceptionTest.php	/^            $message = 'Error message in "\/var\/www\/app\/config.yml" at line 42 (near "foo: bar")';$/;"	v
+message	lib/Yaml/Tests/ParseExceptionTest.php	/^            $message = 'Error message in "\\\\\/var\\\\\/www\\\\\/app\\\\\/config.yml" at line 42 (near "foo: bar")';$/;"	v
+modifiers	lib/Yaml/Parser.php	/^            $modifiers = isset($matches['modifiers']) ? $matches['modifiers'] : '';$/;"	v
+moveToNextLine	lib/Yaml/Parser.php	/^    private function moveToNextLine()$/;"	f
+moveToPreviousLine	lib/Yaml/Parser.php	/^    private function moveToPreviousLine()$/;"	f
+name	cli/blon.php	/^                $name = $param[0];$/;"	v
+name	cli/blon.php	/^                if ($dir != '.' && is_dir($dir)) $name = "$dir\/$name";$/;"	v
+name	cli/blon.php	/^                if ($name == '.' || $name == '..') continue;$/;"	v
+newIndent	lib/Yaml/Parser.php	/^            $newIndent = $indentation;$/;"	v
+newIndent	lib/Yaml/Parser.php	/^            $newIndent = $this->getCurrentLineIndentation();$/;"	v
+notEOF	lib/Yaml/Parser.php	/^            $notEOF = $this->moveToNextLine();$/;"	v
+notEOF	lib/Yaml/Parser.php	/^        $notEOF = $this->moveToNextLine();$/;"	v
+objectForMap	lib/Yaml/Inline.php	/^    private static $objectForMap = false;$/;"	v
+objectSupport	lib/Yaml/Inline.php	/^    private static $objectSupport = false;$/;"	v
+offset	lib/Yaml/Parser.php	/^        $this->offset = $offset;$/;"	v
+offset	lib/Yaml/Parser.php	/^    private $offset         = 0;$/;"	v
+options	cli/blon.php	/^    private $options = array();$/;"	v
+output	lib/Yaml/Dumper.php	/^        $output = '';$/;"	v
+output	lib/Yaml/Inline.php	/^                    $output = rtrim(substr($output, 0, $strpos));$/;"	v
+output	lib/Yaml/Inline.php	/^                $output = $match[1];$/;"	v
+output	lib/Yaml/Inline.php	/^                $output = self::evaluateScalar($output);$/;"	v
+output	lib/Yaml/Inline.php	/^                $output = substr($scalar, $i);$/;"	v
+output	lib/Yaml/Inline.php	/^            $output = $unescaper->unescapeDoubleQuotedString($output);$/;"	v
+output	lib/Yaml/Inline.php	/^            $output = $unescaper->unescapeSingleQuotedString($output);$/;"	v
+output	lib/Yaml/Inline.php	/^            $output = array();$/;"	v
+output	lib/Yaml/Inline.php	/^            $output = self::parseQuotedScalar($scalar, $i);$/;"	v
+output	lib/Yaml/Inline.php	/^        $output = array();$/;"	v
+output	lib/Yaml/Inline.php	/^        $output = substr($match[0], 1, strlen($match[0]) - 2);$/;"	v
+param	cli/blon.php	/^                $param = explode('=', $arg);$/;"	v
+parse	lib/Yaml/Inline.php	/^    public static function parse($value, $exceptionOnInvalidType = false, $objectSupport = false, $objectForMap = false)$/;"	f
+parse	lib/Yaml/Parser.php	/^    public function parse($value, $exceptionOnInvalidType = false, $objectSupport = false, $objectForMap = false)$/;"	f
+parse	lib/Yaml/Yaml.php	/^    public static function parse($input, $exceptionOnInvalidType = false, $objectSupport = false)$/;"	f
+parseFoldedScalar	lib/Yaml/Parser.php	/^    private function parseFoldedScalar($separator, $indicator = '', $indentation = 0)$/;"	f
+parseMapping	lib/Yaml/Inline.php	/^    private static function parseMapping($mapping, &$i = 0)$/;"	f
+parseQuotedScalar	lib/Yaml/Inline.php	/^    private static function parseQuotedScalar($scalar, &$i)$/;"	f
+parseScalar	lib/Yaml/Inline.php	/^    public static function parseScalar($scalar, $delimiters = null, $stringDelimiters = array('"', "'"), &$i = 0, $evaluate = true)$/;"	f
+parseSequence	lib/Yaml/Inline.php	/^    private static function parseSequence($sequence, &$i = 0)$/;"	f
+parseValue	lib/Yaml/Parser.php	/^    private function parseValue($value, $exceptionOnInvalidType, $objectSupport, $objectForMap)$/;"	f
+parsed	lib/Yaml/Parser.php	/^                        $parsed = $parser->parse($value, $exceptionOnInvalidType, $objectSupport, $objectForMap);$/;"	v
+parsed	lib/Yaml/Tests/YamlTest.php	/^        $parsed = Yaml::parse($yml);$/;"	v
+parsedByContents	lib/Yaml/Tests/YamlTest.php	/^        $parsedByContents = Yaml::parse($contents);$/;"	v
+parsedByFilename	lib/Yaml/Tests/YamlTest.php	/^        $parsedByFilename = Yaml::parse($filename);$/;"	v
+parsedFile	lib/Yaml/Exception/ParseException.php	/^        $this->parsedFile = $parsedFile;$/;"	v
+parsedFile	lib/Yaml/Exception/ParseException.php	/^    private $parsedFile;$/;"	v
+parsedLine	lib/Yaml/Exception/ParseException.php	/^        $this->parsedLine = $parsedLine;$/;"	v
+parsedLine	lib/Yaml/Exception/ParseException.php	/^    private $parsedLine;$/;"	v
+parsedLine	lib/Yaml/Exception/ParseException.php	/^    public function __construct($message, $parsedLine = -1, $snippet = null, $parsedFile = null, \\Exception $previous = null)$/;"	v
+parser	lib/Yaml/Parser.php	/^                        $parser = new Parser($c);$/;"	v
+parser	lib/Yaml/Parser.php	/^                    $parser = new Parser($c);$/;"	v
+parser	lib/Yaml/Tests/DumperTest.php	/^        $this->parser = new Parser();$/;"	v
+parser	lib/Yaml/Tests/DumperTest.php	/^        $this->parser = null;$/;"	v
+parser	lib/Yaml/Tests/DumperTest.php	/^    protected $parser;$/;"	v
+parser	lib/Yaml/Tests/ParserTest.php	/^        $parser = new Parser();$/;"	v
+parser	lib/Yaml/Tests/ParserTest.php	/^        $this->parser = new Parser();$/;"	v
+parser	lib/Yaml/Tests/ParserTest.php	/^        $this->parser = null;$/;"	v
+parser	lib/Yaml/Tests/ParserTest.php	/^    protected $parser;$/;"	v
+path	lib/Yaml/Tests/DumperTest.php	/^        $this->path = __DIR__.'\/Fixtures';$/;"	v
+path	lib/Yaml/Tests/DumperTest.php	/^        $this->path = null;$/;"	v
+path	lib/Yaml/Tests/DumperTest.php	/^    protected $path;$/;"	v
+path	lib/Yaml/Tests/ParserTest.php	/^        $path = __DIR__.'\/Fixtures';$/;"	v
+pattern	cli/blon.php	/^        $pattern = "\/.*\\bt\\([\\'\\"](.*)[\\'\\"]\\).*\/";$/;"	v
+pattern	lib/Yaml/Parser.php	/^            $pattern = sprintf('\/^ {%d}(.*)$\/', $indentation);$/;"	v
+pos	lib/Yaml/Parser.php	/^            if (false !== $pos = strpos($value, '#')) {$/;"	v
+prefix	lib/Yaml/Dumper.php	/^        $prefix = $indent ? str_repeat(' ', $indent) : '';$/;"	v
+printMatches	cli/db.php	/^    public function printMatches() {$/;"	f
+printc	cli/db.php	/^    public function printc($str) {$/;"	f
+process	cli/blon.php	/^    public function process($dir) {$/;"	f
+processFile	cli/blon.php	/^    private function processFile($file) {$/;"	f
+raw	lib/Yaml/Inline.php	/^                        $raw = $scalar;$/;"	v
+raw	lib/Yaml/Inline.php	/^                        return '0' == $scalar[0] ? octdec($scalar) : (((string) $raw == (string) $cast) ? $cast : $raw);$/;"	v
+raw	lib/Yaml/Inline.php	/^                        return '0' == $scalar[1] ? octdec($scalar) : (((string) $raw == (string) $cast) ? $cast : $raw);$/;"	v
+rawMessage	lib/Yaml/Exception/ParseException.php	/^        $this->rawMessage = $message;$/;"	v
+rawMessage	lib/Yaml/Exception/ParseException.php	/^    private $rawMessage;$/;"	v
+readParams	cli/blon.php	/^    private function readParams() {$/;"	f
+refs	lib/Yaml/Parser.php	/^    private $refs           = array();$/;"	v
+removeComments	lib/Yaml/Parser.php	/^                $removeComments = !preg_match($removeCommentsPattern, $this->currentLine);$/;"	v
+removeComments	lib/Yaml/Parser.php	/^        $removeComments = !preg_match($removeCommentsPattern, $this->currentLine);$/;"	v
+removeCommentsPattern	lib/Yaml/Parser.php	/^        $removeCommentsPattern = '~'.self::FOLDED_SCALAR_PATTERN.'$~';$/;"	v
+repr	lib/Yaml/Inline.php	/^                $repr = is_string($value) ? "'$value'" : (is_infinite($value) ? str_ireplace('INF', '.Inf', strval($value)) : strval($value));$/;"	v
+required_locales	lib/Yaml/Tests/InlineTest.php	/^        $required_locales = array('fr_FR.UTF-8', 'fr_FR.UTF8', 'fr_FR.utf-8', 'fr_FR.utf8', 'French_France.1252');$/;"	v
+requiresDoubleQuoting	lib/Yaml/Escaper.php	/^    public static function requiresDoubleQuoting($value)$/;"	f
+requiresSingleQuoting	lib/Yaml/Escaper.php	/^    public static function requiresSingleQuoting($value)$/;"	f
+result	cli/blon.php	/^        $result = preg_match_all($pattern, $text, $matches, PREG_OFFSET_CAPTURE);$/;"	v
+result	lib/Yaml/Inline.php	/^                $result = self::parseMapping($value, $i);$/;"	v
+result	lib/Yaml/Inline.php	/^                $result = self::parseScalar($value, null, array('"', "'"), $i);$/;"	v
+result	lib/Yaml/Inline.php	/^                $result = self::parseSequence($value, $i);$/;"	v
+ret	lib/Yaml/Parser.php	/^            $ret = true;$/;"	v
+ret	lib/Yaml/Parser.php	/^        $ret = false;$/;"	v
+save	cli/db.php	/^    public function save($output) {$/;"	f
+scalar	lib/Yaml/Inline.php	/^        $scalar = trim($scalar);$/;"	v
+scalarLower	lib/Yaml/Inline.php	/^        $scalarLower = strtolower($scalar);$/;"	v
+self	lib/Yaml/Unescaper.php	/^        $self = $this;$/;"	v
+setIndentation	lib/Yaml/Dumper.php	/^    public function setIndentation($num)$/;"	f
+setParsedFile	lib/Yaml/Exception/ParseException.php	/^    public function setParsedFile($parsedFile)$/;"	f
+setParsedLine	lib/Yaml/Exception/ParseException.php	/^    public function setParsedLine($parsedLine)$/;"	f
+setSnippet	lib/Yaml/Exception/ParseException.php	/^    public function setSnippet($snippet)$/;"	f
+setUp	lib/Yaml/Tests/DumperTest.php	/^    protected function setUp()$/;"	f
+setUp	lib/Yaml/Tests/ParserTest.php	/^    protected function setUp()$/;"	f
+snippet	lib/Yaml/Exception/ParseException.php	/^        $this->snippet = $snippet;$/;"	v
+snippet	lib/Yaml/Exception/ParseException.php	/^    private $snippet;$/;"	v
+str	cli/db.php	/^            $str = str_ireplace("$color ", chr(27) . '[' . $colors[$color] . 'm', $str);$/;"	v
+strings	lib/babylon.php	/^        $strings = require_once('locale\/' . $locale . '.php');$/;"	v
+strpos	lib/Yaml/Inline.php	/^                if (false !== $strpos = strpos($output, ' #')) {$/;"	v
+t	lib/babylon.php	/^    function t($msg) {$/;"	f
+tearDown	lib/Yaml/Tests/DumperTest.php	/^    protected function tearDown()$/;"	f
+tearDown	lib/Yaml/Tests/ParserTest.php	/^    protected function tearDown()$/;"	f
+test	lib/Yaml/Tests/DumperTest.php	/^                $test = $this->parser->parse($yaml);$/;"	v
+test	lib/Yaml/Tests/ParserTest.php	/^                $test = $parser->parse($yaml);$/;"	v
+testBlockChomping	lib/Yaml/Tests/ParserTest.php	/^    public function testBlockChomping($expected, $yaml)$/;"	f
+testBlockLiteralWithLeadingNewlines	lib/Yaml/Tests/ParserTest.php	/^    public function testBlockLiteralWithLeadingNewlines()$/;"	f
+testDump	lib/Yaml/Tests/InlineTest.php	/^    public function testDump($yaml, $value)$/;"	f
+testDumpNumericValueWithLocale	lib/Yaml/Tests/InlineTest.php	/^    public function testDumpNumericValueWithLocale()$/;"	f
+testEmptyValue	lib/Yaml/Tests/ParserTest.php	/^    public function testEmptyValue()$/;"	f
+testEndOfTheDocumentMarker	lib/Yaml/Tests/ParserTest.php	/^    public function testEndOfTheDocumentMarker()$/;"	f
+testFoldedStringBlockWithComments	lib/Yaml/Tests/ParserTest.php	/^    public function testFoldedStringBlockWithComments()$/;"	f
+testGetMessage	lib/Yaml/Tests/ParseExceptionTest.php	/^    public function testGetMessage()$/;"	f
+testHashStringsResemblingExponentialNumericsShouldNotBeChangedToINF	lib/Yaml/Tests/InlineTest.php	/^    public function testHashStringsResemblingExponentialNumericsShouldNotBeChangedToINF()$/;"	f
+testInlineLevel	lib/Yaml/Tests/DumperTest.php	/^    public function testInlineLevel()$/;"	f
+testMappingDuplicateKeyBlock	lib/Yaml/Tests/ParserTest.php	/^    public function testMappingDuplicateKeyBlock()$/;"	f
+testMappingDuplicateKeyFlow	lib/Yaml/Tests/ParserTest.php	/^    public function testMappingDuplicateKeyFlow()$/;"	f
+testMappingInASequence	lib/Yaml/Tests/ParserTest.php	/^    public function testMappingInASequence()$/;"	f
+testNestedFoldedStringBlockWithComments	lib/Yaml/Tests/ParserTest.php	/^    public function testNestedFoldedStringBlockWithComments()$/;"	f
+testNonUtf8Exception	lib/Yaml/Tests/ParserTest.php	/^    public function testNonUtf8Exception()$/;"	f
+testObjectSupportDisabledButNoExceptions	lib/Yaml/Tests/DumperTest.php	/^    public function testObjectSupportDisabledButNoExceptions()$/;"	f
+testObjectSupportDisabledButNoExceptions	lib/Yaml/Tests/ParserTest.php	/^    public function testObjectSupportDisabledButNoExceptions()$/;"	f
+testObjectSupportDisabledWithExceptions	lib/Yaml/Tests/DumperTest.php	/^    public function testObjectSupportDisabledWithExceptions()$/;"	f
+testObjectSupportEnabled	lib/Yaml/Tests/DumperTest.php	/^    public function testObjectSupportEnabled()$/;"	f
+testObjectSupportEnabled	lib/Yaml/Tests/ParserTest.php	/^    public function testObjectSupportEnabled()$/;"	f
+testObjectsSupportDisabledWithExceptions	lib/Yaml/Tests/ParserTest.php	/^    public function testObjectsSupportDisabledWithExceptions()$/;"	f
+testParse	lib/Yaml/Tests/InlineTest.php	/^    public function testParse($yaml, $value)$/;"	f
+testParseAndDump	lib/Yaml/Tests/YamlTest.php	/^    public function testParseAndDump()$/;"	f
+testParseInvalidMappingKeyShouldThrowException	lib/Yaml/Tests/InlineTest.php	/^    public function testParseInvalidMappingKeyShouldThrowException()$/;"	f
+testParseInvalidMappingShouldThrowException	lib/Yaml/Tests/InlineTest.php	/^    public function testParseInvalidMappingShouldThrowException()$/;"	f
+testParseInvalidSequenceShouldThrowException	lib/Yaml/Tests/InlineTest.php	/^    public function testParseInvalidSequenceShouldThrowException()$/;"	f
+testParseScalarWithCorrectlyQuotedStringShouldReturnString	lib/Yaml/Tests/InlineTest.php	/^    public function testParseScalarWithCorrectlyQuotedStringShouldReturnString()$/;"	f
+testParseScalarWithIncorrectlyDoubleQuotedStringShouldThrowException	lib/Yaml/Tests/InlineTest.php	/^    public function testParseScalarWithIncorrectlyDoubleQuotedStringShouldThrowException()$/;"	f
+testParseScalarWithIncorrectlyQuotedStringShouldThrowException	lib/Yaml/Tests/InlineTest.php	/^    public function testParseScalarWithIncorrectlyQuotedStringShouldThrowException()$/;"	f
+testParseWithMapObjects	lib/Yaml/Tests/InlineTest.php	/^    public function testParseWithMapObjects($yaml, $value)$/;"	f
+testSequenceInAMapping	lib/Yaml/Tests/ParserTest.php	/^    public function testSequenceInAMapping()$/;"	f
+testSetIndentation	lib/Yaml/Tests/DumperTest.php	/^    public function testSetIndentation()$/;"	f
+testSpecifications	lib/Yaml/Tests/DumperTest.php	/^    public function testSpecifications()$/;"	f
+testSpecifications	lib/Yaml/Tests/ParserTest.php	/^    public function testSpecifications($file, $expected, $yaml, $comment)$/;"	f
+testStringBlockWithComments	lib/Yaml/Tests/ParserTest.php	/^    public function testStringBlockWithComments()$/;"	f
+testTabsInYaml	lib/Yaml/Tests/ParserTest.php	/^    public function testTabsInYaml()$/;"	f
+testUnindentedCollectionException	lib/Yaml/Tests/ParserTest.php	/^    public function testUnindentedCollectionException()$/;"	f
+tests	lib/Yaml/Tests/ParserTest.php	/^        $tests = array();$/;"	v
+text	cli/blon.php	/^        $text = file_get_contents($file);$/;"	v
+text	lib/Yaml/Parser.php	/^            $text = preg_replace('\/(?<!\\n)\\n(?!\\n)\/', ' ', rtrim($text, "\\n"));$/;"	v
+text	lib/Yaml/Parser.php	/^            $text = preg_replace('\/\\n+$\/s', "\\n", $text);$/;"	v
+text	lib/Yaml/Parser.php	/^            $text = preg_replace('\/\\n+$\/s', '', $text);$/;"	v
+text	lib/Yaml/Parser.php	/^        $text = '';$/;"	v
+thrown	lib/Yaml/Exception/DumpException.php	/^ * Exception class thrown when an error occurs during dumping.$/;"	c
+thrown	lib/Yaml/Exception/ParseException.php	/^ * Exception class thrown when an error occurs during parsing.$/;"	c
+thrown	lib/Yaml/Exception/RuntimeException.php	/^ * Exception class thrown when an error occurs during parsing.$/;"	c
+tmp	lib/Yaml/Inline.php	/^                $tmp = ltrim(substr($scalar, $i), ' ');$/;"	v
+to	cli/db.php	/^    * Add a match of t() function to the data structure$/;"	f
+trimmedValue	lib/Yaml/Parser.php	/^        $trimmedValue = preg_replace('#^(\\#.*?\\n)+#s', '', $value, -1, $count);$/;"	v
+trimmedValue	lib/Yaml/Parser.php	/^        $trimmedValue = preg_replace('#^\\-\\-\\-.*?\\n#s', '', $value, -1, $count);$/;"	v
+types	cli/blon.php	/^            $types = $this->getSupportedExtensions();$/;"	v
+unescapeCharacter	lib/Yaml/Unescaper.php	/^    public function unescapeCharacter($value)$/;"	f
+unescapeDoubleQuotedString	lib/Yaml/Unescaper.php	/^    public function unescapeDoubleQuotedString($value)$/;"	f
+unescapeSingleQuotedString	lib/Yaml/Unescaper.php	/^    public function unescapeSingleQuotedString($value)$/;"	f
+unescaper	lib/Yaml/Inline.php	/^        $unescaper = new Unescaper();$/;"	v
+unindentedEmbedBlock	lib/Yaml/Parser.php	/^            $unindentedEmbedBlock = $this->isStringUnIndentedCollectionItem($this->currentLine);$/;"	v
+updateRepr	lib/Yaml/Exception/ParseException.php	/^    private function updateRepr()$/;"	f
+utf8chr	lib/Yaml/Unescaper.php	/^    private static function utf8chr($c)$/;"	f
+value	cli/blon.php	/^                $value = "";$/;"	v
+value	cli/blon.php	/^                if (isset($param[1])) $value = $param[1];$/;"	v
+value	cli/db.php	/^                        if (key($l) == $matches['match']) $value = $l[key($l)];$/;"	v
+value	cli/db.php	/^                $value = "";$/;"	v
+value	lib/Yaml/Inline.php	/^                            $value = self::parseMapping('{'.$value.'}');$/;"	v
+value	lib/Yaml/Inline.php	/^                        $value = self::parseMapping($mapping, $i);$/;"	v
+value	lib/Yaml/Inline.php	/^                        $value = self::parseScalar($mapping, array(',', '}'), array('"', "'"), $i);$/;"	v
+value	lib/Yaml/Inline.php	/^                        $value = self::parseSequence($mapping, $i);$/;"	v
+value	lib/Yaml/Inline.php	/^                    $value = self::parseScalar($sequence, array(',', ']'), array('"', "'"), $i);$/;"	v
+value	lib/Yaml/Inline.php	/^        $value = trim($value);$/;"	v
+value	lib/Yaml/Parser.php	/^                            $value = $data;$/;"	v
+value	lib/Yaml/Parser.php	/^                            $value = $this->getNextEmbedBlock();$/;"	v
+value	lib/Yaml/Parser.php	/^                            $value = $values['value'];$/;"	v
+value	lib/Yaml/Parser.php	/^                        $value = $parser->parse($this->getNextEmbedBlock(), $exceptionOnInvalidType, $objectSupport, $objectForMap);$/;"	v
+value	lib/Yaml/Parser.php	/^                        $value = $this->parseValue($values['value'], $exceptionOnInvalidType, $objectSupport, $objectForMap);$/;"	v
+value	lib/Yaml/Parser.php	/^                        $value = Inline::parse($this->lines[0], $exceptionOnInvalidType, $objectSupport, $objectForMap);$/;"	v
+value	lib/Yaml/Parser.php	/^                $value = substr($value, 1);$/;"	v
+value	lib/Yaml/Parser.php	/^                $value = substr($value, 1, $pos - 2);$/;"	v
+value	lib/Yaml/Parser.php	/^            $value = $trimmedValue;$/;"	v
+value	lib/Yaml/Parser.php	/^            $value = preg_replace('#\\.\\.\\.\\s*$#s', '', $value);$/;"	v
+value	lib/Yaml/Parser.php	/^        $value = preg_replace('#^\\%YAML[: ][\\d\\.]+.*\\n#su', '', $value, -1, $count);$/;"	v
+value	lib/Yaml/Parser.php	/^        $value = str_replace(array("\\r\\n", "\\r"), "\\n", $value);$/;"	v
+value	lib/Yaml/Tests/InlineTest.php	/^        $value = "'don''t do somthin'' like that'";$/;"	v
+value	lib/Yaml/Tests/InlineTest.php	/^        $value = "'don't do somthin' like that'";$/;"	v
+value	lib/Yaml/Tests/InlineTest.php	/^        $value = '"don"t do somthin" like that"';$/;"	v
+value	lib/Yaml/Tests/InlineTest.php	/^        $value = '686e444';$/;"	v
+value	lib/Yaml/Tests/InlineTest.php	/^        $value = '{ "foo " bar": "bar" }';$/;"	v
+willBeInlined	lib/Yaml/Dumper.php	/^                $willBeInlined = $inline - 1 <= 0 || !is_array($value) || empty($value);$/;"	v
+yaml	cli/db.php	/^            $yaml = new Parser();$/;"	v
+yaml	cli/db.php	/^        $yaml = $dumper->dump($merged, 2, 0);$/;"	v
+yaml	lib/Yaml/Tests/ParserTest.php	/^        $yaml = <<<'EOF'$/;"	v
+yaml	lib/Yaml/Tests/ParserTest.php	/^        $yaml = <<<EOF$/;"	v
+yaml	lib/Yaml/Yaml.php	/^        $yaml = new Dumper();$/;"	v
+yaml	lib/Yaml/Yaml.php	/^        $yaml = new Parser();$/;"	v
+yamls	lib/Yaml/Tests/DumperTest.php	/^            $yamls = file_get_contents($this->path.'\/'.$file.'.yml');$/;"	v
+yamls	lib/Yaml/Tests/ParserTest.php	/^            $yamls = file_get_contents($path.'\/'.$file.'.yml');$/;"	v
+yamls	lib/Yaml/Tests/ParserTest.php	/^        $yamls = array($/;"	v
+yml	lib/Yaml/Tests/YamlTest.php	/^        $yml = Yaml::dump($data);$/;"	v
